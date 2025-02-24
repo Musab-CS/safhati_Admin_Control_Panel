@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'DINNextLTW23';
+    src: url('../fonts/DINNextLTW23/din-next-lt-w23-regular.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINNextLTW23';
+    src: url('../fonts/DINNextLTW23/din-next-lt-w23-medium.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINNextLTW23';
+    src: url('../fonts/DINNextLTW23/din-next-lt-w23-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINNextLTW23';
+    src: url('../fonts/DINNextLTW23/din-next-lt-w23-black.ttf') format('truetype');
+    font-weight: bolder;
+    font-style: normal;
+}
+
+
+
+
+

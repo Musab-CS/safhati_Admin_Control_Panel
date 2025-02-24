@@ -1,0 +1,55 @@
+# PHPUnit
+/.phpunit.cache
+.phpunit.result.cache
+
+# Composer / PHP
+/vendor
+/auth.json
+/.ignorex
+
+# Node / NPM / Yarn
+/node_modules
+npm-debug.log
+yarn-error.log
+
+# Build files
+#/public/build
+/public/hot
+/public/storage
+/public/picker
+/public/cloud
+
+# Storage
+/storage/*.key
+/storage/framework/*
+/storage/logs/*
+/storage/sessions/*
+/storage/views/*
+/config/portfolio.php
+config/portfolio.php
+# Environment variables
+.env.backup
+.env.production
+vendor.tar
+# PHP Actor
+/.phpactor.json
+
+# Homestead (only if you're using it)
+Homestead.json
+Homestead.yaml
+
+# JetBrains (PHPStorm / Webstorm)
+.idea
+
+# Visual Studio Code
+.vscode
+
+# Fleet
+/.fleet
+
+# System files
+.DS_Store
+
+# Docker Configurations
+docker-compose.yml
+/docker

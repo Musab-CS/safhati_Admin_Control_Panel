@@ -1,0 +1,183 @@
+.badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 6px;
+    border: 1px solid transparent;
+    min-width: 10px;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-radius: 5px
+  }
+
+.badge.badge-default {
+    background-color: #B0BEC5
+}
+
+.badge.badge-primary {
+    background-color: #2196F3
+}
+
+.badge.badge-secondary {
+    background-color: #323a45
+}
+
+.badge.badge-success {
+    background-color: #64DD17
+}
+
+.badge.badge-warning {
+    background-color: #FFD600
+}
+
+.badge.badge-info {
+    background-color: #29B6F6
+}
+
+.badge.badge-danger {
+    background-color: #ef1c1c
+}
+
+.badge.badge-primary-light {
+    background-color: #dff2ff !important; /* Lighter blue */
+    color: #0D47A1; /* Darker text for contrast */
+}
+
+.badge.badge-secondary-light {
+    background-color: #E0E0E0 !important; /* Light gray */
+    color: #424242;
+}
+
+.badge.badge-success-light {
+    background-color: #E8F5E9; /* Light green */
+    color: #1B5E20;
+}
+
+.badge.badge-warning-light {
+    background-color: #fdfadc !important; /* Light yellow */
+    color: #FF8F00;
+}
+
+.badge.badge-info-light {
+    background-color: #E1F5FE !important; /* Light cyan */
+    color: #01579B;
+}
+
+.badge.badge-danger-light {
+    background-color: #FFEBEE; /* Light red */
+    color: #B71C1C; /* Darker text for contrast */
+}
+
+.badge.badge-outlined {
+background-color: transparent
+}
+
+.badge.badge-outlined.badge-default {
+border-color: #B0BEC5 !important;
+color: #B0BEC5
+}
+
+.badge.badge-outlined.badge-primary {
+border-color: #2196F3 !important;
+color: #2196F3
+}
+
+.badge.badge-outlined.badge-secondary {
+border-color: #323a45 !important;
+color: #323a45
+}
+
+.badge.badge-outlined.badge-success {
+border-color: #64DD17 !important;
+color: #64DD17
+}
+
+.badge.badge-outlined.badge-warning {
+border-color: #FFD600 !important;
+color: #FFD600
+}
+
+.badge.badge-outlined.badge-info {
+    border-color: #29B6F6 !important;
+    color: #29B6F6 !important
+}
+
+.badge.badge-outlined.badge-danger {
+border-color: #ef1c1c !important;
+color: #ef1c1c
+}
+
+
+.modal {
+    display: none !important;
+}
+
+.modal.show {
+    display: block !important;
+}
+.modal-backdrop {
+    z-index: -1;
+}
+
+.modal-backdrop.show {
+    z-index: 999;
+}
+
+.snapDialog-item .snapDialog-title , .snapDialog-item .snapDialog-message {
+    font-family: 'DINNextLTW23', sans-serif !important;
+    font-weight: 600 !important;
+}
+
+.snapAlert-title , .snapAlert-message {
+    font-family: 'DINNextLTW23', sans-serif !important;
+}
+
+
+.form-check-input:checked[type=radio] {
+    background-image: unset !important;
+}
+
+
+.form-control::placeholder {
+    color: #c6c6c6;
+}
+
+.z-1000 {
+    z-index: 10000 !important;
+}
+
+
+.border-primary-2 {
+    border-color: var(--primary-2) !important;
+}
+
+
+.ql-container {
+    min-height: 400px;
+    font-family: 'DINNextLTW23', sans-serif !important;
+    font-weight: 200;
+    font-size: 17px;
+
+}
+
+.flatpickr-input.form-control {
+    width: calc(100% - 20px) !important;
+}
+.filepond--credits {
+    display: none !important;
+}
+
+.filepond--panel-root {
+    background-color: #e4f3ff;
+    border: 1px solid #cee9ff;
+}
+.filepond--drop-label {
+    font-family: 'DINNextLTW23', sans-serif !important;
+}
+
+.filepond--drop-label * {
+    font-weight: 600 !important;
+}

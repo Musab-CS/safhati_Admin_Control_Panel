@@ -1,0 +1,11 @@
+# install laravel package by composer
+ composer install
+
+
+# install Node Modules package by npm
+ npm install && npm run dev
+ npm install && npm run build
+
+# Login Credential
+    Email: email@email.com
+    Password: 123456
