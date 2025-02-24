@@ -10,7 +10,7 @@ const props = defineProps({
 
 <template>
 
-    <div class="relative position-relative">
+    <div class="relative position-relative bg-white">
         <div class="auth-logo">
             <Link href="/auth/login">
                 <img :src="logo" alt="">
@@ -28,8 +28,8 @@ const props = defineProps({
             </div>
             <div class="col d-grid p-0 flex-centers auth-left-side">
                 <div class="m-5 py-5 d-none d-xl-block d-lg-block">
-                    <div class="">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, officia cum minima ex iusto ut aperiam id praesentium accusantium. Maxime quas aperiam corporis quia itaque eos aliquid. Modi, vitae? Eos!
+                    <div class="fs-5 col-sm-9 mx-auto text-light text-center" style="line-height: 40px;">
+                        {{ "إدارة منصتك بكل سهولة واحترافية – تحكم في كل التفاصيل، تابع الأداء، واتخذ القرارات الذكية في مكان واحد.  إذا كنت تريد وصفًا أكثر تفصيلًا أو رسميًا، يمكنني تعديله حسب احتياجاتك" }}
                     </div>
                 </div>
             </div>
