@@ -1,6 +1,8 @@
 <script setup>
-    import { Link } from '@inertiajs/vue3';
+    import { Link , usePage } from '@inertiajs/vue3';
     import { ref } from 'vue';
+
+    const page = usePage();
 
     const isMobile = () => {
         const screenWidth = document.documentElement.clientWidth;
@@ -116,6 +118,12 @@
         },
     ])
 
+    const activeSub = (items)=>{
+        items = items.map(x => x.url)
+        return items.includes(page.url)
+
+    }
+
 
 </script>
 
@@ -136,7 +144,8 @@
                     <i :class="item.icon"></i>
                     <span> {{ item.title }} </span>
                 </Link>
-                <div v-if="item.items != null" class="sidebar-item has-child" :expand="item.collabse">
+                <div v-if="item.items != null" class="sidebar-item has-child" :expand=" activeSub(item.items) || item.collabse">
+
                     <div class="sidebar-item-title" @click="item.collabse=!item.collabse">
                         <i :class="item.icon"></i>
                         <span> {{ item.title }} </span>
