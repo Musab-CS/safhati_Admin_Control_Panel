@@ -36,7 +36,6 @@
         "jquery": "^3.7.1",
         "nprogress": "^0.2.0",
         "select2": "^4.1.0-rc.0",
-        "snap-alert": "^1.0.0",
         "swiper": "^11.1.14",
         "vue-chart-3": "^3.1.8",
         "vue-filepond": "^7.0.4",

@@ -6,12 +6,12 @@
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-C-3ZO5KJ.js",
+    "file": "assets/app-BuMlTLU1.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
     "css": [
-      "assets/app-C7ewe4hn.css"
+      "assets/app-tA9GzBVD.css"
     ],
     "assets": [
       "assets/boxicons-CSrLvhY_.eot",
@@ -23,7 +23,7 @@
       "assets/din-next-lt-w23-medium-BDYvq-Ln.ttf",
       "assets/din-next-lt-w23-bold-B2gHHbzP.ttf",
       "assets/din-next-lt-w23-black-BjdAM73G.ttf",
-      "assets/header_vover-BNq4k4ea.svg"
+      "assets/waves-B5vYxpUC.svg"
     ]
   },
   "resources/js/src/assets/fonts/DINNextLTW23/din-next-lt-w23-black.ttf": {
@@ -62,8 +62,8 @@
     "file": "assets/boxicons-CeGEncwm.woff2",
     "src": "resources/js/src/assets/fonts/boxicons/boxicons.woff2"
   },
-  "resources/js/src/assets/images/header_vover.svg": {
-    "file": "assets/header_vover-BNq4k4ea.svg",
-    "src": "resources/js/src/assets/images/header_vover.svg"
+  "resources/js/src/assets/images/component/waves.svg": {
+    "file": "assets/waves-B5vYxpUC.svg",
+    "src": "resources/js/src/assets/images/component/waves.svg"
   }
 }
