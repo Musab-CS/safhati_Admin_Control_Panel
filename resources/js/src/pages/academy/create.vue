@@ -6,6 +6,7 @@
     import FileUpload from "../../components/FileUpload.vue";
     import InputField from "../../components/InputField.vue";
     import Select2 from "../../components/Select2.vue";
+    import axios from "axios";
 
     const { proxy } = getCurrentInstance();
     proxy.$SnapAlert.SnapOptions({
@@ -17,12 +18,20 @@
 
     const selectedDate = ref('');
     const status = ref('');
+
+
     const form = ref({
-        name: "",
+        name: null,
+        slug: null,
+        category: null,
         content : '' ,
-        slug : null,
-        files: [], // Bound with v-model
+        image: null,
+
+        date_at : null ,
+        status : null,
     });
+
+    const message = ref("");
 
     const categories = [
         { id : 'none' , value : 'لايوجد' } ,
@@ -46,6 +55,31 @@
     } )
 
 
+    const submitForm = async () => {
+        try {
+            console.log(form.value)
+            const formData = new FormData();
+            formData.append("title", form.value.name);
+            formData.append("slug", form.value.slug??null);
+            formData.append("category", form.value.category?.id);
+            formData.append("body", form.value.content?.id);
+            formData.append("image", form.value.image.length > 0 ? form.value.image[0] : null);
+
+            formData.append("date_at", form.value.date_at);
+            formData.append("status", form.value.status?.id);
+
+            const response = await axios.post("https://admin.website.test/api/academy/create", formData, {
+                headers: { "Content-Type": "multipart/form-data" },
+            });
+
+            message.value = "Upload successful!";
+            console.log("Response:", response.data);
+        } catch (error) {
+            message.value = "Upload failed!";
+            console.error("Error:", error.response?.data);
+        }
+    };
+
     const create = ()=>{
         proxy.$SnapAlert.success('نجاح', 'تم إضافة القسم بنجاح.');
     }
@@ -64,7 +98,7 @@
         </div>
 
 
-        <form @submit.prevent="create">
+        <form @submit.prevent="submitForm">
             <div class="s-card p-3 px-xl-5 px-lg-5 py-5 mx-2 mx-xl-0 mx-lg-0">
 
                 <div class="pb-3">
@@ -112,7 +146,7 @@
                 <FileUpload
                     label="الغلاف"
                     :required="true"
-                    v-model="form.files"
+                    v-model="form.image"
                 />
             </div>
 
@@ -122,7 +156,7 @@
                         <Flatpickr
                             label="تاريخ النشر"
                             placeholder="إختر تاريخ النشر"
-                            v-model="selectedDate"
+                            v-model="form.date_at"
                             inputClass="border-2"
                             required="true"
                             :options="{ enableTime: true, dateFormat: 'd/m/Y H:i' }"
@@ -142,6 +176,7 @@
                 <button type="submit" class="btn btn-base px-5 py-2">{{ 'إضافة الى الأكاديمية' }}</button>
             </div>
 
+            {{ form }}
 
         </form>
 
